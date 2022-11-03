@@ -16,41 +16,95 @@
 </head>
 <body>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+  <main class="main-container">
+    <div class="modal-background"></div>
+    <header class="logo-hamburguer">
+      <img src="./assets/images/logo.svg" alt="logo" id="logo">
+      <button class="hamburguer"> <img src="./assets/images/icon-menu.svg" alt="hamburguer"></button>
+    </header>
+    <!-- Nav Mobile -->
+    <nav class="nav-mobile">
+      <ul class="nav-mobile__container">
+        <li class="nav-mobile__element"> <a href="#"> Home </a>  </li>
+        <li class="nav-mobile__element"> <a href="#"> New </a></li>
+        <li class="nav-mobile__element"> <a href="#"> Popular </a></li>
+        <li class="nav-mobile__element"> <a href="#"> Trending</a></li>
+        <li class="nav-mobile__element"> <a href="#"> Categories </a></li>
+      </ul>
+    </nav>
+    <!-- Ende nav Mobile -->
+    <!-- Nav desktop -->
+    <nav class="nav-desktop">
+      <ul class="nav-desktop__container">
+        <li class="nav-mobile__element"> <a href="#"> Home </a>  </li>
+        <li class="nav-mobile__element"> <a href="#"> New </a></li>
+        <li class="nav-mobile__element"> <a href="#"> Popular </a></li>
+        <li class="nav-mobile__element"> <a href="#"> Trending</a></li>
+        <li class="nav-mobile__element"> <a href="#"> Categories </a></li>
+      </ul>
+    </nav>
+    <!-- End nav desktop -->
 
-  The Bright Future of Web 3.0?
+    <!-- Fist notice -->
+    <section class="news-container">
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+      <article class="principal">
+        <picture>
+         <source media="(min-width: 1440px)" srcset="./assets/images/image-web-3-desktop.jpg">
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="">
+        </picture>
+        <h1 class="principal__title">The Bright Future of Web 3.0?</h1>
+        <div class="principal__description__container">
+          <p class="principal__description__container__text">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+          <p class="principal__description__container__btn"><a href="#">Read more</a></p>
+        </div>
+      </article>
 
-  Read more
+      <!-- Article news -->
+      <article class="news">
+        <h2 class="news__title">New</h2>
+        <div class="news__notices">
+          <h2 class="news__notices__title">Hydrogen VS Electric Cars</h2>
+          <p class="news__notices__description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="news__notices">
+          <h2 class="news__notices__title">The Downsides of AI Artistry</h2>
+          <p class="news__notices__description">What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <div class="news__notices">
+          <h2 class="news__notices__title">Is VC Funding Drying Up?</h2>
+          <p class="news__notices__description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </article>
+    </section>
 
-  New 
+    <!-- End news -->
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+    <article class="other-notices">
+      <div class="other-notices__content">
+        <p class="other-notices__content__number">01</p>
+        <h3 class="other-notices__content__title">Reviving Retro PCs</h3>
+        <p class="other-notices__content__description">What happens when old PCs are given modern upgrades?</p>
+      </div>
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
+      <div class="other-notices__content">
+        <p class="other-notices__content__number">02</p>
+        <h3 class="other-notices__content__title">Top 10 Laptops of 2022</h3>
+        <p class="other-notices__content__description">Our best picks for various needs and budgets.</p>
+      </div>
 
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+      <div class="other-notices__content">
+        <p class="other-notices__content__number">03</p>
+        <h3 class="other-notices__content__title">The Growth of Gaming</h3>
+        <p class="other-notices__content__description">How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </article>
 
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
+  </main>
 
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
 
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
+  
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
