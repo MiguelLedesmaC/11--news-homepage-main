@@ -26,7 +26,6 @@ li, a {
     display: flex;
     flex-direction: column;
     width: 80%;
-    border: 1px solid;
     padding: 0 25px;
     margin: 0 auto;
 }
@@ -105,7 +104,6 @@ li, a {
 .nav-desktop__container li a:hover {
     color: var(--Soft_red);
 }
-
 #img-principal{
     width: 100%;
 }
@@ -113,18 +111,9 @@ li, a {
     display: flex;
     flex-direction: column;
 }
-@media (min-width:1440px) {
-    #img-principal {
-        width: 64%;
-    }
-    .title-description__container{
-        flex-direction: row;
-        gap: 50px;
-    }
-}
+
 .principal__title{
     font-size: 2.7rem;
-    border: 1px solid;
     width: 299px;
     font-weight: 700;
     color: var(--Very_dark_blue);
@@ -153,6 +142,7 @@ li, a {
 }
 
 .news {
+    margin-top: 70px;
     background-color: var(--Very_dark_blue);
     color: white;
     padding: 25px 36px 25px 20px;
@@ -161,12 +151,12 @@ li, a {
     color: var(--Soft_orange);
 }
 .news__notices {
-    padding: 25px 0;
+    padding: 25px 0 50px;
     border-bottom: 1px solid var(--Grayish_blue);
 }
 .news__notices:last-child{
     border-bottom: none;
-    padding-bottom: none;
+    padding-bottom: 0;
 }
 .news__notices__title {
     font-size: 1.2rem;
@@ -175,4 +165,64 @@ li, a {
 .news__notices__description {
     font-size: .9rem;
     color: var(--Grayish_blue);
+}
+@media (min-width:1440px) {
+    .principal-news__container {
+        display: flex;
+    }
+    #img-principal {
+        width: 64%;
+        margin-bottom: 50px;
+    }
+    .title-description__container{
+        flex-direction: row;
+        gap: 50px;
+    }
+    .news{
+        margin-top: 0px;    
+    }
+}
+.other-notices {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+@media (min-width:1440px) {
+    .other-notices{
+        flex-direction: row;
+        margin-top: 75px;
+    }
+}
+.other-notices__content{
+    display: flex;
+}
+.other-notices__img img {
+   width: 102px;
+   height: 132px;
+   object-fit: cover;
+   margin-right: 15px;
+}
+.other-notices__content__number{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--Grayish_blue);
+    margin-bottom: 10px;
+}
+.other-notices__content__title{
+    font-weight: 700;
+    color: var(--Very_dark_blue);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+.other-notices__content__description{
+    color: var(--Dark_grayish_blue);
+    line-height: 1.5rem;
+}
+
+.attribution {
+    margin-top: 20px;
+     font-size: 11px; text-align: center;
+    }
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
 }
