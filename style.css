@@ -47,8 +47,8 @@ li, a {
     background-color: var(--Very_dark_blue);
     opacity: .5;
 }
-#hamburguerl,
-#close-hamburguer {
+
+#hamburguer,#close-hamburguer {
     border: none;
     cursor: pointer;
     background-color: transparent;
@@ -135,6 +135,10 @@ li, a {
     border-radius: 8px;
     cursor: pointer;
 }
+.principal__description__container__btn:hover{
+    background-color: var(--Very_dark_blue);
+
+}
 .principal__description__container__btn a{
     color: white;
     text-transform: uppercase;
@@ -162,6 +166,9 @@ li, a {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
+.news__notices__title:hover {
+    color: var(--Soft_orange);
+}
 .news__notices__description {
     font-size: .9rem;
     color: var(--Grayish_blue);
@@ -183,6 +190,7 @@ li, a {
     }
 }
 .other-notices {
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -213,6 +221,9 @@ li, a {
     color: var(--Very_dark_blue);
     font-size: 1.1rem;
     margin-bottom: 15px;
+}
+.other-notices__content__title:hover {
+    color: var(--Soft_red);
 }
 .other-notices__content__description{
     color: var(--Dark_grayish_blue);
