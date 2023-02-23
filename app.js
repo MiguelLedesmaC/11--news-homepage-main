@@ -4,7 +4,7 @@ let menu = document.querySelector('.nav-mobile')
 let modalBackground = document.querySelector('.modal-background')
 let isOpen = false;
 
-console.log(hamburguer);
+
 hamburguer.addEventListener('click',()=> {
     if(!isOpen){
         menu.style.display = 'flex';
